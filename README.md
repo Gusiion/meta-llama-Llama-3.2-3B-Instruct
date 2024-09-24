@@ -236,20 +236,20 @@ The Meta Llama 3.2 collection of multilingual large language models (LLMs) is a 
 
 ## How to use
 
- This repository contains two versions of Meta-Llama-3.2-3B-Instruct, for use with `transformers` and with the original `llama` codebase.
+This repository contains two versions of Meta-Llama-3.2-3B-Instruct, for use with `transformers` and with the original `llama` codebase.
 
- ### Use with transformers
+### Use with transformers
 
- Starting with `transformers >= 4.43.0` onward, you can run conversational inference using the Transformers `pipeline` abstraction or by leveraging the Auto classes with the `generate()` function.
+Starting with `transformers >= 4.43.0` onward, you can run conversational inference using the Transformers `pipeline` abstraction or by leveraging the Auto classes with the `generate()` function.
 
- Make sure to update your transformers installation via `pip install --upgrade transformers`.
+Make sure to update your transformers installation via `pip install --upgrade transformers`.
 
- ```python
+```python
 import torch
 from transformers import pipeline
 
 model_id = "meta-llama/Llama-3.2-3B-Instruct"
-pipeline = transformers.pipeline(
+pipeline = pipeline(
     "text-generation",
     model=model_id,
     torch_dtype=torch.bfloat16,
@@ -266,15 +266,15 @@ outputs = pipeline(
 print(outputs[0]["generated_text"][-1])
 ```
 
- Note: You can also find detailed recipes on how to use the model locally, with `torch.compile()`, assisted generations, quantised and more at [`huggingface-llama-recipes`](https://github.com/huggingface/huggingface-llama-recipes)
+Note: You can also find detailed recipes on how to use the model locally, with `torch.compile()`, assisted generations, quantised and more at [`huggingface-llama-recipes`](https://github.com/huggingface/huggingface-llama-recipes)
 
- ### Use with `llama`
+### Use with `llama`
 
- Please, follow the instructions in the [repository](https://github.com/meta-llama/llama)
+Please, follow the instructions in the [repository](https://github.com/meta-llama/llama)
 
- To download Original checkpoints, see the example command below leveraging `huggingface-cli`:
+To download Original checkpoints, see the example command below leveraging `huggingface-cli`:
 
- ```
+```
 huggingface-cli download meta-llama/Llama-3.2-3B-Instruct --include "original/*" --local-dir Llama-3.2-3B-Instruct
 ```
 
