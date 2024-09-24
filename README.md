@@ -236,7 +236,7 @@ The Meta Llama 3.2 collection of multilingual large language models (LLMs) is a 
 
 ## How to use
 
-This repository contains two versions of Meta-Llama-3.2-3B-Instruct, for use with `transformers` and with the original `llama` codebase.
+This repository contains two versions of Llama-3.2-3B-Instruct, for use with `transformers` and with the original `llama` codebase.
 
 ### Use with transformers
 
@@ -249,7 +249,7 @@ import torch
 from transformers import pipeline
 
 model_id = "meta-llama/Llama-3.2-3B-Instruct"
-pipeline = pipeline(
+pipe = pipeline(
     "text-generation",
     model=model_id,
     torch_dtype=torch.bfloat16,
@@ -259,7 +259,7 @@ messages = [
     {"role": "system", "content": "You are a pirate chatbot who always responds in pirate speak!"},
     {"role": "user", "content": "Who are you?"},
 ]
-outputs = pipeline(
+outputs = pipe(
     messages,
     max_new_tokens=256,
 )
