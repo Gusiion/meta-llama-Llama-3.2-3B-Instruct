@@ -236,7 +236,7 @@ The Meta Llama 3.2 collection of multilingual large language models (LLMs) is a 
 
 ## How to use
 
-This repository contains two versions of Meta-Llama-3.2-3B-Instruct, for use with transformers and with the original `llama` codebase.
+This repository contains two versions of Llama-3.2-3B-Instruct, for use with transformers and with the original `llama` codebase.
 
 ### Use with transformers
 
