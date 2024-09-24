@@ -201,6 +201,7 @@ extra_gated_description: >-
   accordance with the [Meta Privacy
   Policy](https://www.facebook.com/privacy/policy/).
 extra_gated_button_content: Submit
+extra_gated_eu_disallowed: true
 ---
 
 ## Model Information
