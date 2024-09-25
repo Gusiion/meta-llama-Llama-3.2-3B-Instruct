@@ -234,6 +234,50 @@ The Meta Llama 3.2 collection of multilingual large language models (LLMs) is a 
 
 **Out of Scope:** Use in any manner that violates applicable laws or regulations (including trade compliance laws). Use in any other way that is prohibited by the Acceptable Use Policy and Llama 3.2 Community License. Use in languages beyond those explicitly referenced as supported in this model card.
 
+## How to use
+
+This repository contains two versions of Llama-3.2-3B-Instruct, for use with `transformers` and with the original `llama` codebase.
+
+### Use with transformers
+
+Starting with `transformers >= 4.43.0` onward, you can run conversational inference using the Transformers `pipeline` abstraction or by leveraging the Auto classes with the `generate()` function.
+
+Make sure to update your transformers installation via `pip install --upgrade transformers`.
+
+```python
+import torch
+from transformers import pipeline
+
+model_id = "meta-llama/Llama-3.2-3B-Instruct"
+pipe = pipeline(
+    "text-generation",
+    model=model_id,
+    torch_dtype=torch.bfloat16,
+    device_map="auto",
+)
+messages = [
+    {"role": "system", "content": "You are a pirate chatbot who always responds in pirate speak!"},
+    {"role": "user", "content": "Who are you?"},
+]
+outputs = pipe(
+    messages,
+    max_new_tokens=256,
+)
+print(outputs[0]["generated_text"][-1])
+```
+
+Note: You can also find detailed recipes on how to use the model locally, with `torch.compile()`, assisted generations, quantised and more at [`huggingface-llama-recipes`](https://github.com/huggingface/huggingface-llama-recipes)
+
+### Use with `llama`
+
+Please, follow the instructions in the [repository](https://github.com/meta-llama/llama)
+
+To download Original checkpoints, see the example command below leveraging `huggingface-cli`:
+
+```
+huggingface-cli download meta-llama/Llama-3.2-3B-Instruct --include "original/*" --local-dir Llama-3.2-3B-Instruct
+```
+
 ## Hardware and Software
 
 **Training Factors:** We used custom training libraries, Meta's custom built GPU cluster, and production infrastructure for pretraining. Fine-tuning, annotation, and evaluation were also performed on production infrastructure.
