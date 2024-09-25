@@ -16,6 +16,7 @@ tags:
 - pytorch
 - llama
 - llama-3
+license: llama3.2
 extra_gated_prompt: >-
   ### LLAMA 3.2 COMMUNITY LICENSE AGREEMENT
 
