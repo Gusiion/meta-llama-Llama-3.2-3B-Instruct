@@ -325,13 +325,13 @@ In this section, we report the results for Llama 3.2 models on standard automati
 | General |  | MMLU | 5 | macro\_avg/acc | 49.3 | 63.4 | 69.4 |
 | Re-writing |  | Open-rewrite eval | 0 | micro\_avg/rougeL | 41.6 | 40.1 | 40.9 |
 | Summarization |  | TLDR9+ (test) | 1 | rougeL | 16.8 | 19.0 | 17.2 |
-| Instruction following |  | IFEval | 0 | Avg(Prompt/Instruction acc Loose/Strict) | 59.5 | 77.4 | 80.4 |
+| Instruction following |  | IFEval | 0 | avg(prompt/instruction acc loose/strict) | 59.5 | 77.4 | 80.4 |
 | Math |  | GSM8K (CoT) | 8 | em\_maj1@1 | 44.4 | 77.7 | 84.5 |
-|  |  | MATH (CoT) | 0 | final\_em | 30.6 | 48.0 | 51.9 |
+|  |  | MATH (CoT) | 0 | final\_em | 30.6 | 47.3 | 51.9 |
 | Reasoning |  | ARC-C | 0 | acc | 59.4 | 78.6 | 83.4 |
 |  |  | GPQA | 0 | acc | 27.2 | 32.8 | 32.8 |
 |  |  | Hellaswag | 0 | acc | 41.2 | 69.8 | 78.7 |
-| Tool Use |  | BFCL V2 | 0 | acc | 25.7 | 67.0 | 67.1 |
+| Tool Use |  | BFCL V2 | 0 | acc | 25.7 | 67.0 | 70.9 |
 |  |  | Nexus | 0 | macro\_avg/acc | 13.5 | 34.3 | 38.5 |
 | Long Context |  | InfiniteBench/En.QA | 0 | longbook\_qa/f1 | 20.3 | 19.8 | 27.3 |
 |  |  | InfiniteBench/En.MC | 0 | longbook\_choice/acc | 38.0 | 63.3 | 72.2 |
@@ -343,12 +343,12 @@ In this section, we report the results for Llama 3.2 models on standard automati
 | Category | Benchmark | Language | Llama 3.2 1B | Llama 3.2 3B | Llama 3.1 8B |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | General | MMLU (5-shot, macro\_avg/acc) | Portuguese | 39.82 | 54.48 | 62.12 |
-|  |  | Spanish | 41.52 | 55.09 | 62.45 |
-|  |  | Italian | 39.79 | 53.77 | 61.63 |
-|  |  | German | 39.20 | 53.29 | 60.59 |
-|  |  | French | 40.47 | 54.59 | 62.34 |
-|  |  | Hindi | 33.51 | 43.31 | 50.88 |
-|  |  | Thai | 34.67 | 44.54 | 50.32 |
+|  |  | Spanish | 41.5 | 55.1 | 62.5 |
+|  |  | Italian | 39.8 | 53.8 | 61.6 |
+|  |  | German | 39.2 | 53.3 | 60.6 |
+|  |  | French | 40.5 | 54.6 | 62.3 |
+|  |  | Hindi | 33.5 | 43.3 | 50.9 |
+|  |  | Thai | 34.7 | 44.5 | 50.3 |
 
 ## Responsibility & Safety
 
@@ -394,7 +394,8 @@ In addition to our safety work above, we took extra care on measuring and/or mit
 
 **2\. Child Safety:** Child Safety risk assessments were conducted using a team of experts, to assess the model’s capability to produce outputs that could result in Child Safety risks and inform on any necessary and appropriate risk mitigations via fine tuning. We leveraged those expert red teaming sessions to expand the coverage of our evaluation benchmarks through Llama 3 model development. For Llama 3, we conducted new in-depth sessions using objective based methodologies to assess the model risks along multiple attack vectors including the additional languages Llama 3 is trained on. We also partnered with content specialists to perform red teaming exercises assessing potentially violating content while taking account of market specific nuances or experiences. 
 
-**3\. Cyber Attacks:** Our cyber attack uplift study investigated whether LLMs can enhance human capabilities in hacking tasks, both in terms of skill level and speed. Our attack automation study focused on evaluating the capabilities of LLMs when used as autonomous agents in cyber offensive operations, specifically in the context of ransomware attacks. This evaluation was distinct from previous studies that considered LLMs as interactive assistants. The primary objective was to assess whether these models could effectively function as independent agents in executing complex cyber-attacks without human intervention.
+**3\. Cyber Attacks:** For Llama 3.1 405B, our cyber attack uplift study investigated whether LLMs can enhance human capabilities in hacking tasks, both in terms of skill level and speed.
+Our attack automation study focused on evaluating the capabilities of LLMs when used as autonomous agents in cyber offensive operations, specifically in the context of ransomware attacks. This evaluation was distinct from previous studies that considered LLMs as interactive assistants. The primary objective was to assess whether these models could effectively function as independent agents in executing complex cyber-attacks without human intervention. Because Llama 3.2’s 1B and 3B models are smaller and less capable models than Llama 3.1 405B, we broadly believe that the testing conducted for the 405B model also applies to Llama 3.2 models.
 
 ### Community 
 
