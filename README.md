@@ -19,61 +19,70 @@ tags:
 extra_gated_prompt: >-
   ### LLAMA 3.2 COMMUNITY LICENSE AGREEMENT
 
+
   Llama 3.2 Version Release Date: September 25, 2024
+
   
   “Agreement” means the terms and conditions for use, reproduction, distribution 
   and modification of the Llama Materials set forth herein.
+
   
   “Documentation” means the specifications, manuals and documentation accompanying Llama 3.2
   distributed by Meta at https://llama.meta.com/doc/overview.
+
   
   “Licensee” or “you” means you, or your employer or any other person or entity (if you are 
   entering into this Agreement on such person or entity’s behalf), of the age required under
   applicable laws, rules or regulations to provide legal consent and that has legal authority
   to bind your employer or such other person or entity if you are entering in this Agreement
   on their behalf.
+
   
   “Llama 3.2” means the foundational large language models and software and algorithms, including
   machine-learning model code, trained model weights, inference-enabling code, training-enabling code,
   fine-tuning enabling code and other elements of the foregoing distributed by Meta at 
   https://www.llama.com/llama-downloads.
+
   
   “Llama Materials” means, collectively, Meta’s proprietary Llama 3.2 and Documentation (and 
   any portion thereof) made available under this Agreement.
+
   
   “Meta” or “we” means Meta Platforms Ireland Limited (if you are located in or, 
   if you are an entity, your principal place of business is in the EEA or Switzerland) 
   and Meta Platforms, Inc. (if you are located outside of the EEA or Switzerland). 
-  
+
+
   By clicking “I Accept” below or by using or distributing any portion or element of the Llama Materials,
   you agree to be bound by this Agreement.
+
   
   1. License Rights and Redistribution.
   
-      a. Grant of Rights. You are granted a non-exclusive, worldwide, 
+  a. Grant of Rights. You are granted a non-exclusive, worldwide, 
   non-transferable and royalty-free limited license under Meta’s intellectual property or other rights 
   owned by Meta embodied in the Llama Materials to use, reproduce, distribute, copy, create derivative works 
   of, and make modifications to the Llama Materials.  
-  
-      b. Redistribution and Use.  
-  
-          i. If you distribute or make available the Llama Materials (or any derivative works thereof), 
+
+  b. Redistribution and Use.  
+
+  i. If you distribute or make available the Llama Materials (or any derivative works thereof), 
   or a product or service (including another AI model) that contains any of them, you shall (A) provide
   a copy of this Agreement with any such Llama Materials; and (B) prominently display “Built with Llama”
   on a related website, user interface, blogpost, about page, or product documentation. If you use the
   Llama Materials or any outputs or results of the Llama Materials to create, train, fine tune, or
   otherwise improve an AI model, which is distributed or made available, you shall also include “Llama”
   at the beginning of any such AI model name.
-  
-          ii. If you receive Llama Materials, or any derivative works thereof, from a Licensee as part
+
+  ii. If you receive Llama Materials, or any derivative works thereof, from a Licensee as part
   of an integrated end user product, then Section 2 of this Agreement will not apply to you. 
-  
-          iii. You must retain in all copies of the Llama Materials that you distribute the 
+
+  iii. You must retain in all copies of the Llama Materials that you distribute the 
   following attribution notice within a “Notice” text file distributed as a part of such copies: 
   “Llama 3.2 is licensed under the Llama 3.2 Community License, Copyright © Meta Platforms,
   Inc. All Rights Reserved.”
-  
-          iv. Your use of the Llama Materials must comply with applicable laws and regulations
+
+  iv. Your use of the Llama Materials must comply with applicable laws and regulations
   (including trade compliance laws and regulations) and adhere to the Acceptable Use Policy for
   the Llama Materials (available at https://www.llama.com/llama3_2/use-policy), which is hereby 
   incorporated by reference into this Agreement.
@@ -98,7 +107,7 @@ extra_gated_prompt: >-
   
   5. Intellectual Property.
   
-      a. No trademark licenses are granted under this Agreement, and in connection with the Llama Materials, 
+  a. No trademark licenses are granted under this Agreement, and in connection with the Llama Materials, 
   neither Meta nor Licensee may use any name or mark owned by or associated with the other or any of its affiliates, 
   except as required for reasonable and customary use in describing and redistributing the Llama Materials or as 
   set forth in this Section 5(a). Meta hereby grants you a license to use “Llama” (the “Mark”) solely as required 
@@ -106,16 +115,16 @@ extra_gated_prompt: >-
   at https://about.meta.com/brand/resources/meta/company-brand/). All goodwill arising out of your use of the Mark 
   will inure to the benefit of Meta.
   
-      b. Subject to Meta’s ownership of Llama Materials and derivatives made by or for Meta, with respect to any
-      derivative works and modifications of the Llama Materials that are made by you, as between you and Meta,
-      you are and will be the owner of such derivative works and modifications.
-  
-      c. If you institute litigation or other proceedings against Meta or any entity (including a cross-claim or
-      counterclaim in a lawsuit) alleging that the Llama Materials or Llama 3.2 outputs or results, or any portion
-      of any of the foregoing, constitutes infringement of intellectual property or other rights owned or licensable
-      by you, then any licenses granted to you under this Agreement shall terminate as of the date such litigation or
-      claim is filed or instituted. You will indemnify and hold harmless Meta from and against any claim by any third
-      party arising out of or related to your use or distribution of the Llama Materials.
+  b. Subject to Meta’s ownership of Llama Materials and derivatives made by or for Meta, with respect to any
+  derivative works and modifications of the Llama Materials that are made by you, as between you and Meta,
+  you are and will be the owner of such derivative works and modifications.
+
+  c. If you institute litigation or other proceedings against Meta or any entity (including a cross-claim or
+  counterclaim in a lawsuit) alleging that the Llama Materials or Llama 3.2 outputs or results, or any portion
+  of any of the foregoing, constitutes infringement of intellectual property or other rights owned or licensable
+  by you, then any licenses granted to you under this Agreement shall terminate as of the date such litigation or
+  claim is filed or instituted. You will indemnify and hold harmless Meta from and against any claim by any third
+  party arising out of or related to your use or distribution of the Llama Materials.
   
   6. Term and Termination. The term of this Agreement will commence upon your acceptance of this Agreement or access
   to the Llama Materials and will continue in full force and effect until terminated in accordance with the terms
@@ -170,14 +179,20 @@ extra_gated_prompt: >-
       19. Generating or facilitating false online engagement, including fake reviews and other means of fake online engagement 
   4. Fail to appropriately disclose to end users any known dangers of your AI system
   5. Interact with third party tools, models, or software designed to generate unlawful content or engage in unlawful or harmful conduct and/or represent that the outputs of such tools, models, or software are associated with Meta or Llama 3.2
-  
+
+
   With respect to any multimodal models included in Llama 3.2, the rights granted under Section 1(a) of the Llama 3.2 Community License Agreement are not being granted to you if you are an individual domiciled in, or a company with a principal place of business in, the European Union. This restriction does not apply to end users of a product or service that incorporates any such multimodal models.
-  
+
+
   Please report any violation of this Policy, software “bug,” or other problems that could lead to a violation of this Policy through one of the following means:
-  
+
+
   * Reporting issues with the model: [https://github.com/meta-llama/llama-models/issues](https://l.workplace.com/l.php?u=https%3A%2F%2Fgithub.com%2Fmeta-llama%2Fllama-models%2Fissues&h=AT0qV8W9BFT6NwihiOHRuKYQM_UnkzN_NmHMy91OT55gkLpgi4kQupHUl0ssR4dQsIQ8n3tfd0vtkobvsEvt1l4Ic6GXI2EeuHV8N08OG2WnbAmm0FL4ObkazC6G_256vN0lN9DsykCvCqGZ)
+  
   * Reporting risky content generated by the model: [developers.facebook.com/llama_output_feedback](http://developers.facebook.com/llama_output_feedback)
+  
   * Reporting bugs and security concerns: [facebook.com/whitehat/info](http://facebook.com/whitehat/info)
+  
   * Reporting violations of the Acceptable Use Policy or unlicensed uses of Llama 3.2: LlamaUseReport@meta.com
 extra_gated_fields:
   First Name: text
