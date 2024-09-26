@@ -16,6 +16,63 @@ tags:
 - pytorch
 - llama
 - llama-3
+widget:
+  - example_title: rococo art
+    messages:
+      - role: user
+        content:
+          - type: text
+            text: Which era does this piece belong to? Give details about the era.
+          - type: image_url
+            image_url:
+              url: https://huggingface.co/datasets/huggingface/release-assets/resolve/main/rococo.jpg
+      - role: assistant
+        content: |
+          The piece is a painting of a woman in a red dress, surrounded by gold and white ornate details. The woman is depicted in mid-air, with her arms outstretched and her legs bent at the knees. She is holding a bouquet of flowers in her right hand and a fruit in her left hand.
+          
+          The background of the painting is a light blue sky with pink clouds, and there are also some pink flowers and green leaves surrounding the woman. The overall atmosphere of the painting is one of joy and celebration, as if the woman is dancing or celebrating something.
+          
+          This piece belongs to the Rococo era, which was a style of art and architecture that emerged in Europe in the 18th century. The Rococo style is characterized by its use of pastel colors, curved lines, and ornate details. It was popularized during the reign of King Louis XV of France, who ruled from 1715 to 1774.
+  - example_title: diagram understanding
+    messages:
+      - role: user
+        content:
+          - type: text
+            text: Where do the droughts happen according to this diagram?
+          - type: image_url
+            image_url:
+              url: https://huggingface.co/datasets/huggingface/release-assets/resolve/main/weather_events.png
+      - role: assistant
+        content: |
+          # Drought Regions in 2016
+          
+          According to the diagram, the regions that experienced severe droughts in 2016 are:
+          
+          - **Eastern and Southern Africa**: This region was severely affected by droughts, with significant impacts on agriculture and water resources.
+          - **Western and Southern Africa**: Droughts also occurred in this region, leading to food insecurity and other challenges.
+          
+          These regions were particularly vulnerable to droughts in 2016, highlighting the need for effective water management strategies and climate resilience measures.
+  - example_title: document qa
+    messages:
+      - role: user
+        content:
+          - type: text
+            text: How long does it take from invoice date to due date? Be short and concise.
+          - type: image_url
+            image_url:
+              url: https://huggingface.co/datasets/huggingface/release-assets/resolve/main/invoice.png
+      - role: assistant
+        content: |
+          To determine the time gap between the invoice date and the due date, we need to calculate the difference between these two dates.
+          
+          Invoice Date: February 11, 2019
+          Due Date: February 26, 2019
+          
+          Step 1: Calculate the Difference in Days
+          
+          February 26 - February 11 = 15 days
+          
+          Therefore, the time gap between the invoice date and the due date is 15 days.
 license: llama3.2
 extra_gated_prompt: >-
   ### LLAMA 3.2 COMMUNITY LICENSE AGREEMENT
